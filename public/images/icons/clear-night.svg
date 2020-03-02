@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="clear-night.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="43.615307"
+     inkscape:cy="48.590968"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54167)">
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:3.77952761;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 42.34375 2.6132812 C 19.467123 6.2777141 2 26.086917 2 50 C 2 76.519962 23.479987 98 50 98 C 63.726823 98 76.093351 92.235633 84.839844 83.005859 A 50.000001 50.000001 0 0 1 81.890625 83.109375 A 50.000001 50.000001 0 0 1 62.822266 79.310547 C 58.896559 81.035704 54.561599 82 50 82 C 32.319996 82 18 67.679912 18 50 C 18 38.610688 23.974296 28.612873 32.943359 22.953125 A 50.000001 50.000001 0 0 1 42.34375 2.6132812 z M 32.503906 25.703125 C 27.462574 29.34554 23.556339 34.569855 21.560547 40.583984 C 20.686384 43.218191 20.364771 44.764693 20.101562 47.626953 C 19.858891 50.265896 20.068034 53.497532 20.662109 56.275391 C 23.359151 68.886582 34.125346 78.528058 47.009766 79.871094 C 49.998943 80.182678 52.958844 80.013677 56.162109 79.349609 C 57.577898 79.056103 58.961529 78.64515 60.310547 78.146484 A 50.000001 50.000001 0 0 1 31.890625 33.109375 A 50.000001 50.000001 0 0 1 32.503906 25.703125 z "
+       id="Imported Path"
+       transform="matrix(0.26458333,0,0,0.26458333,0,270.54167)" />
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "ek_weatherapp",
+  "version": "1.0.0",
+  "description": "A weather app built on node-express, uses darksky and owm APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EK",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.1",
+    "node-fetch": "^2.6.0"
+  }
+}

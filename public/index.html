@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow, noindex, noarchive">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="app">
+
+        <!-- Search Bar -->
+        <nav class="search navbar">
+            <form class="search-form form-inline my-4">
+                <div>
+                    <input type="text" placeholder="Enter a city..." class="search-field">
+                    <input type="image" name="submit" class="search-icon" src="images/searchicon.png" alt="submit">
+                </div>
+            </form>
+            <a href="https://darksky.net/poweredby/" target="_blank" class="darksky pr-4">"Powered by Dark Sky"</a>
+        </nav>
+
+        <!-- Welcome Menu -->
+        <div class="menu px-4 py-3">
+            <div class="welcome">
+                <h2>Welcome!</h2>
+                <p>Enter a city to display its weather forecast.</p><br>
+                <div class="directions">
+                    <p>To search for a city in a specific country, enter the city name followed by the 
+                        <a href="https://www.nationsonline.org/oneworld/country_code_list.htm" target = "_blank">country code</a>
+                    </p> 
+                    <p><em>*The city and the country code must be comma separated</em></p>
+                    <span>Ex:</span><span class="ml-4"><i>Venice,IT</i></span>
+                </div>
+            </div>
+            <div class="error d-none">
+                <p>Could not find <i>""</i>.</p>
+            </div>
+            <!-- Search results section omitted since OWM only returns the most relevant city -->
+        </div>
+
+
+        <!-- Begin Current Conditions Section -->
+        <div class="today d-none" 
+             style="background: url(images/conditions/cloudy.jpg) no-repeat center center;
+             background-size: cover;">
+
+            <div class="today-content clearfix">
+                <div class="cur-location">
+                    <span class="cur-city">City</span>
+                    <span class="cur-country">Country</span>
+                    <span class="cur-date">Date</span>
+                    <span class="cur-time">Time</span>
+                </div>
+    
+                <div class="m-units">
+                    <button type="button" class="unit-btn metric">C</button>
+                    <button type="button" class="unit-btn imperial active-unit">F</button>
+                </div>
+    
+                <div class="current-conditions">
+                    <div class="cond-description">
+                        <img src="images/icons/clear-day.svg" alt="current-conditions" class="weather-icon">
+                        <span>Current Weather Condition</span>
+                    </div>
+
+                    <div class="current-temp">
+                        <span class="temp">0</span>
+                        <span class="deg">&deg;</span>
+                    </div>
+
+                    <div class="other-temps">
+                        <div class="cur-feels-like">
+                            <span class="ot-label">Feels like</span>
+                            <div class="ot-temp">
+                                <span class="cur-fl-temp">0</span>
+                                <span class="cur-fl-deg">&deg;</span>
+                            </div>
+                        </div>
+    
+                        <div class="today-high-low">
+                            <div class="today-hi">
+                                <span class="ot-label">High</span>
+                                <div class="ot-temp">
+                                    <span class="today-hi-temp">0</span>
+                                    <span class="today-hi-deg">&deg;</span>
+                                </div>
+                            </div>
+                            <div class="today-lo">
+                                <span class="ot-label">Low</span>
+                                <div class="ot-temp">
+                                    <span class="today-lo-temp">0</span>
+                                    <span class="today-lo-deg">&deg;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cur-details">
+                    <span class="cd-title">Current Details</span>
+                    <div class="cur-wind-speed">
+                        <span class="cd-label">Wind Speed</span>
+                        <div class="cd-value">
+                            <span class="cur-ws-value">4</span>
+                            <span class="cur-ws-unit">mph</span>
+                            <span class="cur-ws-direction">NNE</span>
+                        </div>
+                    </div>
+                    <div class="cur-humid">
+                        <span class="cd-label">Humidity</span>
+                        <div class="cd-value">
+                            <span class="cur-humid-value">0</span>
+                            <span>%</span>
+                        </div>
+                    </div>
+    
+                    <div class="cur-uv">
+                        <span class="cd-label">UV Index</span>
+                        <div class="cd-value">
+                            <span class="cur-uv-value">0</span>
+                        </div>
+                    </div>
+    
+                    <div class="cur-visibility">
+                        <span class="cd-label">Visiblity</span>
+                        <div class="cd-value">
+                            <span class="cur-vis-distance">0</span>
+                            <span class="cur-vis-unit">miles</span>
+                        </div>
+                    </div>
+
+                    <div class="sun-moon">
+                        <div class="today-sunrise">
+                            <div class="sm-label">
+                                <img src="images/moonsun/sun.png" alt="sun">
+                                <span>Sunrise</span>
+                            </div>
+                            <span class="today-sunrise-time">00:00 AM</span>
+                        </div>
+                        <div class="today-sunset">
+                            <div class="sm-label">
+                                <img src="images/moonsun/sun.png" alt="sun">
+                                <span>Sunset</span>
+                            </div>
+                            <span class="today-sunset-time">00:00 PM</span>
+                        </div>
+                        <div class="today-moon-phase">
+                            <img src="images/moonsun/newmoon.png" class="today-moon-icon" alt="moon-phase">
+                            <span>New Moon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cond-summary">
+                    <p>Partly cloudy with light rain showers in the evening.</p>
+                </div>
+            </div>
+
+            <!-- Weather alert section for additional warnings & details -->
+            <div class="weather-alert d-none">
+                <img src="images/warning.png" class="alert-icon" alt="weather-alert">
+                <span class="alert-message danger">Warning message goes here.</span>
+                <span>Check your local news stations for further information.</span>
+            </div>
+        </div>
+        <!-- /End Current Conditions Section -->
+
+
+        <!-- Hourly Forecast scroll container -->
+        <div class="hourly px-4 pt-3 pb-2 d-none">
+            <span class="hourly-title">Next 24 Hours</span>
+            <div class="hourly-list-container">
+                 <!-- Populated by JS -->
+
+                <div class="hourly-weather-item">
+                    <span class="hw-time">0 AM</span>
+                    <div class="hw-temp">
+                        <span>0</span>
+                        <span>&deg;</span>
+                    </div>
+                    <img src="images/icons/clear-day.svg" alt="weather-icon" class="hw-icon weather-icon">
+                    <div class="hw-precip">
+                        <img src="images/precip.png" alt="precip-icon" class="hw-precip-icon">
+                        <span class="hw-precip-chance">0</span>
+                        <span>%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 5,10 day forecast expandable list -->
+        <div class="forecast px-4 pt-3 pb-2 d-none">
+            <span class="forecast-title">Extended Forecast</span>
+            <!-- DarkSky does not support this at the moment ...
+            <div class="forecast-options">
+                <button type="button" class="fc-btn fc-hi active-fc-btn">5 DAY</button>
+                <span>|</span>
+                <button type="button" class="fc-btn fc-lo">10 DAY</button>
+            </div>
+            -->
+            <ul class="xtend-forecast-container">
+                <!-- Populated by JS -->
+                
+                <li class="daily-weather-item">
+                    <span class="dw-weekday">Weekday</span>
+                    <img src="images/icons/clear-day.svg" alt="weather-icon" class="dw-weather-icon weather-icon">
+                    <div class="dw-precip">
+                        <img src="images/precip.png" alt="precip-icon" class="dw-precip-icon">
+                        <span class="dw-precip-value">0</span>
+                        <span>%</span>
+                    </div>
+                    <div class="dw-hi-lo">
+                        <span>H:</span>
+                        <span class="dw-hi-value">0</span>
+                        <span>&deg;</span>
+                    </div>
+                    <div class="dw-hi-lo">
+                        <span>L:</span>
+                        <span class="dw-lo-value">0</span>
+                        <span>&deg;</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="d-none">
+            <p>This weather app was built with the DarkSky API and the OpenWeather API.</p>
+            <p>To learn more about this project, please read the docs located in the project's drive folder.</p>
+            <p>
+                <i>Note: This app is for demonstration purposes only. It is only capable of serving 
+                a limited amount of users at a time, and is therefore subject to limited availability.<br>
+                If you are looking for reliable weather coverage, check out sites like <a href="https://weather.com/">Weather.com</a>, 
+                <a href="https://www.yahoo.com/news/weather/">Yahoo Weather</a>, or <a href="https://www.accuweather.com/">AccuWeather</a>.</i> 
+            </p>
+            <img src="images/poweredby-darkbackground.png" alt="poweredby-darksky" class="dslogo">
+        </footer>
+    </div>
+
+    <script src="requests.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
