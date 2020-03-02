@@ -4,7 +4,8 @@
   "description": "A weather app built on node-express, uses darksky and owm APIs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "EK",
   "license": "MIT",
